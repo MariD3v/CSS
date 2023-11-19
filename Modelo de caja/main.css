@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(254, 215, 255);
+}
+
+.caja { /*Seleccionamos la clase caja y le metemos atributos*/
+    margin: 8px; /* Agregamos un margen adicional por fuera de la caja, para moverla*/
+    padding: 8px; /* Agregamos un margen adicional dentro de la caja para mover el texto interior*/
+    border-style: solid dotted dashed double; /*Borde de la caja, se pueden combinar varios estilos: (solid (negro), dashed (lineas discontinuas con rallas), dotted (lineas discontinuas con puntos), double (lineas dobles), groove (sombra), ridge (sombra invertida), inset (sombra de caja hundida), outset (sombra de caja elevada),hidden (oculto))*/
+    border-width: 8px; /* Ancho del borde */
+    border-color:brown; /*Color del borde*/
+    border-left:6px solid #afa; /*Agregar propiedades dependiendo del lado del borde.*/
+    border-top: 4px solid #111111;
+    border-bottom: 3px double #aaa;
+    border-right:4px dashed #fff;
+    background-color: blueviolet; /*Solo colorea el interior de la caja*/
+    border-radius: 4px; /*Redondea el borde de la caja*/
+    height: 100px; /*Altura de la caja*/
+    width: 100px; /*Ancho de la caja*/
+    color: #fae; /*color del texto*/
+    
+}
+
+.nuevacaja {
+    margin: 20px; 
+    background-color: #fae;
+    height: 100px;
+    width: 100px; 
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 2px 2px 5px inset; /*inset para hundir el texto*/
+    position: relative; /*Asi podemos mover la caja con los siguientes parametros*/
+    left: 50px;
+    transform: rotate(20deg); /*Transform solo sirve con display block. (rotate, translate(x px,y px), scale (ancho, alto), skewX/skewY(5deg) acuesta el elemento,*/
+    transition: 0.7s; /*Ampliar un elemento por tiempo, se aplica en :hover*/
+}
+
+.nuevacaja:hover {
+    transform: rotate(20deg) scale(1.1, 1.1);
+    width: 150px; /*Al pasar el mouse, aqui se aplica transition*/
+    background-color: rgb(171, 110, 159);
+}

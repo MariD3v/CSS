@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(255, 184, 222); /*Fondo de la página*/
+    color: #a8143b; /*Color del texto de todo body*/
+}
+#parrafo { /*Utilizamos # para acceder al selector de id*/
+    color :blueviolet
+}
+.etiqueta { /*Utilizamos . para acceder al selecctor de clases*/
+    color: rgb(0, 255, 255);
+}

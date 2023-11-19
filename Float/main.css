@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(255, 184, 222); /*Fondo de la página*/
+}
+
+img {
+    float:left; /*Asi indicamos a los elementos su posición con respecto a otros elementos*/
+    opacity: 0.7; /* Del 0 al 1. Indica la opacidad */
+}
+
+img:hover{
+    opacity: 0.4; /*Cuando pasamos el mouse por encima*/
+}

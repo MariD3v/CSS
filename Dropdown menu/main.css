@@ -1,0 +1,43 @@
+body {
+background-color: rgb(211, 164, 255);
+}
+
+.dropdown-button {
+    background-color: rgb(91, 91, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; /*Para cambiar el cursor cuando pasa por encima*/
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position:absolute; /*Para que al desplegar el menu, los elementos que se encuentren debajo no se muevan, sino que se oculten debajo del menu*/
+    background-color: rgb(147, 226, 226);
+    min-width: 170px;
+    box-shadow: 0px 6px 10px rgb(183, 183, 183);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(126, 216, 207);
+}
+
+.dropdown:hover .dropdown-button {
+    background-color: blue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(255, 184, 222); /*Fondo de la página*/
+}
+
+table { /*Toda la tabla*/
+    width: 100%; /*Para que ocupe toda la pagina*/
+    border-collapse: collapse; /*eliminar las separaciones de las columnas*/
+}
+
+tr:nth-child(even) { /*Seleccionar un cierto tipo de filas*/
+    background-color: #f2f2f2;
+}
+
+td{ /*Elementos de la tabla*/
+    border: 1px solid rgb(238, 127, 182);
+    padding: 8px;
+}
+
+table th { /*Cabecera*/
+    background-color: rgb(116, 1, 76);
+    color: white;
+    text-align: left; /*Alinear*/
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
