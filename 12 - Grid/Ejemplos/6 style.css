@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body{
+    background-color: rgb(170, 201, 170);
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    justify-content: space-between;
+}
+
+#enlaces{
+    align-content: center;
+}
+
+#enlaces *{
+    padding: 10px;
+}
+
+main{
+    padding:15px;
+    grid-gap: 15px;
+    display: grid;
+    grid-template-columns: minmax(200px,1fr) minmax(200px,1fr) minmax(200px,1fr);
+    grid-template-rows: minmax(200px,1fr) minmax(200px,1fr) minmax(200px,1fr);
+    height: 100vh;
+}
+
+nav{
+    padding:15px;
+    grid-gap: 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(101, 146, 194);
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    display: grid;
+    grid-template-columns: minmax(200px,1fr);
+    grid-template-rows: minmax(200px,1fr) minmax(200px,1fr),minmax(200px,1fr);
+}
+
+ul{
+    margin: 40px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding:15px;
+    grid-gap: 15px;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 3;
+    display: grid;
+    grid-template-columns:  minmax(200px,1fr) minmax(200px,1fr);
+    grid-template-rows:  minmax(200px,1fr) minmax(200px,1fr),minmax(200px,1fr);
+}
+
+section div{
+    background-color: rgb(101, 146, 194);
+    border-radius: 5px;
+    color: white;
+    padding:15px;
+}
+
+section p{
+    padding:15px 15px 15px 0;
+}
+
+#imagenes{
+    justify-content: center;
+    display: flex;
+    width: 70%;
+    margin: 10px 15%;
+    border-radius: 10px;
+    background-color: bisque;
+    flex-wrap: wrap;
+}
+
+#imagenes *{
+    border-radius: 5px;
+    margin:5px;
+}

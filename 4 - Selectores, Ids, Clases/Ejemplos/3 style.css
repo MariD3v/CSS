@@ -1,0 +1,45 @@
+
+a:link{
+    color: green;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+    background-color: rgb(109, 255, 255);
+}
+
+a:active{
+    background-color: rgb(8, 8, 71);
+}
+
+li{
+    font-style:italic;
+}
+
+
+li:first-child{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+li:nth-child(even) a{
+color: red;
+}
+
+li:nth-child(odd) a{
+color: rgb(18, 18, 177);
+}
+
+.par{
+    color: grey;
+}
+
+.impar{
+    color: black;
+    text-decoration: underline;
+}

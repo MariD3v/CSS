@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer 2</title>
+    <style>
+        .body {
+            height: 100%;
+            width: 100%;
+            
+        }
+        *{
+            margin: 0;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-areas:
+                "cabecera cabecera"
+                "nav nav"
+                "contenido aside"
+                "pie pie";
+            grid-template-columns: 75% 25%;
+            grid-template-rows: 100px 60px 1fr 60px;
+            height: 100vh;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header {
+            grid-area: cabecera;
+            background: rgb(178, 158, 181);
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            font-size: 25px;
+
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: rgb(129, 90, 130);
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(178, 151, 191);
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        a:hover {
+            color: rgb(209, 156, 255);
+        }
+
+        section {
+            padding: 30px;
+            grid-area: contenido;
+            background-color: rgb(240, 240, 240);
+        }
+        h1{
+            padding: 20px;
+        }
+
+        aside {
+            padding: 30px;
+            grid-area: aside;
+            background-color: rgb(209, 209, 209);
+        }
+
+        footer {
+            display: grid;
+            grid-area: pie;
+            background-color: rgb(108, 88, 104);
+            color: white;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>Noticias Mari</header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <section>
+            <h1>Mari, la Programadora Estrella</h1>
+            <p>Después de su valiente rescate de los perritos, Mari se embarcó en una nueva aventura: el mundo de la programación.Mari comenzó su formación en programación web y desarrollo de aplicaciones móviles. Con dedicación y esfuerzo, pasaba horas aprendiendo lenguajes como Python y JavaScript. Pronto, comenzó a participar en hackatones, donde no solo mejoró sus habilidades, sino que también hizo valiosas conexiones con otros programadores.<br><br>Con su éxito, Mari decidió compartir sus conocimientos. Comenzó a dar talleres gratuitos para jóvenes interesados en la programación.Después de su éxito en el mundo de la programación, Mari decidió crear una startup que desarrolla herramientas educativas interactivas para estudiantes de todas las edades. Su objetivo es hacer el aprendizaje más accesible y divertido. Con su plataforma, los estudiantes pueden aprender desde matemáticas hasta ciencias a través de juegos y actividades prácticas. La startup ha recibido elogios por su enfoque innovador y ha comenzado a colaborar con escuelas locales.</p>
+        </section>
+        <aside>
+            <h1>Noticias de última hora</h1>
+            <p>Mari rescata 4 perritos de una casa en incendios<br><br> Mari gana el premio nobel de programación</p>
+        </aside>
+        <footer>Noticias de Mari</footer>
+    </div>
+</body>
+
+</html>

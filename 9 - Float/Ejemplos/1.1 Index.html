@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer 1.1</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #ab{
+            top: 50px;
+            left:50px;
+            position: absolute;
+            background-color: green;
+        }
+        #es{
+            margin-left: 10px;
+            position: static;
+            background-color: blue;
+        }
+        #re{
+            top:10px;
+            left: 20px;
+            position: relative;
+            background-color: red;
+        }
+        #con{
+            border: 1px solid grey;
+            width: 120px;
+            height: 250px;
+            margin-top: 130px;
+            margin-left: 130px;
+        }
+        p{
+            position: relative;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="con">
+        <div id="es">
+            <p>Estático</p>
+        </div>
+        <div id="re">
+            <p>Relativo</p>
+        </div>
+    </div>
+    <div id="ab">
+        <p>Absoluto</p>
+    </div>
+</body>
+</html>

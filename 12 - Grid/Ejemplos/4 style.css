@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(255, 217, 237); /*Fondo de la página*/
+}
+
+.grid1 {
+    display: grid; /*Asi definimos un elemento grid o con inline-grid (Para que solo ocupe en vertical)*/
+    grid-template-rows: 50px 100px; /*Agrega el tamaño a la fila1 (50px) y a la fila2 (100px) y las restantes ocupan lo auto */
+    grid-template-columns: 90px 20% 1fr 10rem; /* defines el ancho de las columnas tantas veces como numero de columnas quieres, se puede definir con fr, rem, % y px*/
+    grid-gap: 20px 10px ; /*Separa las filas en 20px y las columnas en 10px*/
+    border: 4px solid rgb(107, 189, 134);
+    margin: 10px;
+}
+
+.grid2 {
+    background-color: rgb(159, 159, 255);
+    display: grid; 
+    grid-template-rows: minmax(100px, auto); /*Valor minimo de la primera fila es 100px*/
+    grid-template-columns: minmax(auto,50%) 1fr 2fr; /*Valor maximo de la primera columna es 50% de la pagina*/
+    grid-gap: 1em 2em ;
+    border: 4px solid darkkhaki;
+    margin: 10px;
+    justify-items: center; /*Coloca todos los elementos en eje horizontal(center, start, end, stretch (predeterminado))*/
+    align-items: center; /*Coloca todos los elementos en eje vertical(center, start, end, stretch (predeterminado))*/
+}
+
+.grid3 {
+    display: grid; 
+    grid-template-rows: repeat(2, 50px); /*nº de veces que se repiten ciertos pixeles es decir, numero de filas y su anchura*/
+    grid-template-columns: 40px repeat(3, 1fr) 100px; /*1ºcolumna de 30px, 3 columnas de 1fr y 1 columna de 100px*/
+    grid-gap: 20px;
+    border: 4px solid rgb(108, 107, 189);
+    margin: 10px;
+}
+.item-1 {
+    justify-self: left; /*Coloca elementos en el eje horizontal*/
+    align-self: center; /*Coloca elementos en el eje vertical*/
+}
+ 
+.element {
+    background-color: rgb(255, 168, 216);
+}
+
+.header{
+    grid-column: 1/6; /*nº de columna donde queremos que empiece header / nº de columna+1 donde queremos que acabe header*/
+    grid-row: 1/3; /*nº de fila donde queremos que empiece header / nº de fila donde queremos que acabe header*/
+}
+
+.grid4 {
+    display: grid; 
+    grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 50px [row-3-fin]; /*De esta forma nombramos cada fila*/
+    grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-fin];/*De esta forma nombramos cada columna*/
+    grid-gap: 20px;
+    border: 4px solid rgb(107, 174, 189);
+    margin: 10px;
+}
+.header4 {
+    grid-column:col-1-inicio / col-4-fin;
+    grid-row: row-1-inicio / row-3-fin;
+}
+
+.grid5 {
+    display: grid; 
+    grid-template-rows: repeat(2, [row-inicio] 50px [row-fin]) ; /*De esta forma nombramos automaticamente la primera linea horizontal como inicio, la segunda como inicio2 y fin y la tercera como fin2*/
+    grid-template-columns: repeat(3, [col-inicio] 1fr [col-fin]);/*De esta forma nombramos automaticamente la primera linea vertical como inicio, la segunda como inicio2 y fin, la tercera como fin2 y inicio2 y la cuarta como fin3*/
+    grid-gap: 20px;
+    border: 4px solid rgb(189, 107, 107);
+    margin: 10px;
+}
+.header5 {
+    grid-column:col-inicio / col-fin 3;
+    grid-row: row-inicio / row-fin 3;
+}
+
+.grid6 {
+    display: grid;
+    grid-template-areas: "header header"
+                         "content sidebar"
+                         "footer footer"; /*Asi movemos las grillas*/
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px; /*Define automaticamente todas las filas no definidas*/
+    grid-auto-flow: row; /*Define hacia donde va el flujo de datos, row(predefinido) o colum*/
+
+}
+.red{
+    background-color: rgb(255, 138, 138);
+}
+.blue{
+    background-color: rgb(168, 168, 255);
+}

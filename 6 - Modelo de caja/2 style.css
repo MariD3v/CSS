@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+.caja {
+    border-style: outset; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 4px; 
+    border-width: 1px;
+}
+.contenido{
+    padding: 10px;
+}
+.header{
+    padding: 10px;
+    border-bottom: solid 1px #eee;
+}
+.footer{
+    padding: 10px;
+    border-top: solid 1px #eee;
+}
+.primario{
+    background-color: rgb(64, 134, 255);
+    padding: 5px;
+    border: 0px;
+    color: #ffffff;
+}
+.secundario{
+    background-color: rgba(125, 125, 125, 0.529);
+    padding: 5px;
+    border: 0px;
+    color: #ffffff;
+}

@@ -1,0 +1,29 @@
+* { /*Se aplica todo el contenido del html */
+    font:1em/1.3 Arial, Helvetica,sans-serif; 
+}
+
+p{ /*Se aplica a todos los párrafos */
+    color: #555;
+}
+
+#primero p { /*Se aplica al párrafo con id primero */
+    color: #336699;
+}
+
+a{ /*Se aplica a todos los enlaces*/
+    color: #CC3300;
+}
+
+#primero em{ /*Se aplica a los em que esten dentro del id primero*/
+    background-color: #FFFFCC;
+}
+
+em.especial{ /*Se aplica dentro del em a las clases especial*/
+    background-color: #FFCC99;
+    border:1px solid #FF9900;
+    padding: .1em;
+}
+
+.normal span { /*Se aplica dentro de la clase normal a los span*/
+    font-weight: bold;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Grid Layout</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: 16.66% 16.66% 16.66% 50%;
+            grid-template-rows: 100px 100px;
+            grid-gap: 20px;
+        }
+
+        .item {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        #a1 {
+            border: 1px solid red;
+            padding: 10px;
+            grid-column: 4;
+            grid-row: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="item">Elemento 1</div>
+    <div class="item">Elemento 2</div>
+    <div class="item">Elemento 3</div>
+    <div id="a1">Elemento A1</div>
+    <div class="item">Elemento 4</div>
+    <div class="item">Elemento 5</div>
+</div>
+
+</body>
+</html>

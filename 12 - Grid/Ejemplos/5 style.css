@@ -1,0 +1,23 @@
+html{
+    height: 100%; /*Para que ocupe toda la página*/
+}
+body{
+    background-color: rgb(255, 217, 237); /*Fondo de la página*/
+    margin: 0px;
+    height: 100%; /*Para que ocupe toda la página*/
+}
+
+.grid {
+    display: grid;
+    width: 100%; /*Para que ocupe toda la página*/
+    height: 100%; /*Para que ocupe toda la página*/
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(3,70px);
+    grid-gap: 5px;
+    justify-content: space-between;/*Reparte el contenido en la pagina*/
+    align-content: end; /*space-around, space-evently, space-between,center,left...*/
+}
+
+.red {
+    background-color: rgb(255, 142, 142);
+}

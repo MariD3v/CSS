@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="1 style.css" type="text/css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" autofocus title="Escriba su nombre para poder referirnos a usted correctamente" placeholder="Su nombre" value="" name="nombre"><br>
+            <label for="email">Correo electrónico</label>
+            <input type="email" required placeholder="nombre@servidor.com" value="nombre@servidor.com" name="email" title="Escriba su correo electrónico para  poder comunicarnos con Ud. lo antes posible">
+        </fieldset>
+        <fieldset>
+            <legend>Datos del proyecto</legend>
+            <label for="descripcion">Breve descripción del proyecto:<br></label>
+            <textarea cols="130" rows="6" value="" name="descripcion"></textarea><br>
+            <label for="estado">Estado actual del proyecto:<br></label>
+            <input checked type="radio" value="planteamiento" name="estado">En planteamiento
+            <input type="radio" value="planificacion" name="estado">En planificación
+            <input type="radio" value="ejecucion" name="estado">En ejecución
+            <input type="radio" value="finalizado" name="estado">Ya finalizado<br>
+            <label for="presupuesto">Presupuesto aproximado (en €)</label>
+            <input type="number" min=150 max="30000" name="presupuesto" value="1000" step="50">
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

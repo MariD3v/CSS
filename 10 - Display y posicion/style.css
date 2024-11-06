@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(255, 184, 222); /*Fondo de la página*/
+}
+
+p {
+    /*display: inline; Podemos cambiar su comportamiento (inline, none(invisible), block)*/
+    max-width: 350px; /*Indica el tamaño maximo, si vamos reduciendo la página, el width se reduce tambien*/
+    background-color: blueviolet;
+    margin: auto; /*Centrado*/
+    position: relative; /*static (por defecto), relative (permite el movimiento del elemento con los parametros de debajo), fixed (El elemento queda superpuesto encima del resto de elementos y queda fijo en la pagina, de modo que al hacer scroll siempre se vera este elemento)*/
+    right: 15px;
+    top: 3px;
+    bottom: 2px;
+    left: 1px;
+}
