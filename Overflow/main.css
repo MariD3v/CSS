@@ -1,9 +1,0 @@
-body{
-    background-color: rgb(255, 184, 222); /*Fondo de la página*/
-}
-
-#over {
-    width: 100px;
-    height: 100px;
-    overflow-y: scroll; /*Podemos usar overflow en x, y o en general: (visible (predeterminado), hidden (oculta la parte sobrante), scroll (permite scrollear y ver el contenido), auto (permite scrollear solo cuando lo necesite))*/
-}
