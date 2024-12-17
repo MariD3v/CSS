@@ -1,0 +1,12 @@
+
+@mixin card-shadow($activo) {
+    @if $activo {
+        box-shadow: 1px 1px 1px $color-3;
+    } @else {
+        box-shadow: 1px 1px 1px $color-2;
+    }
+}
+
+@mixin rounded-corners() {
+    border-radius: 5px;
+}
