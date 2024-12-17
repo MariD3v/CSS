@@ -1,0 +1,77 @@
+/* SINTAXIS 
+
+Iniciamos sass con: --watch fichero1.scss:fichero1.css o con una extension
+
+VARIABLES
+$nombre
+
+OPERADORES
++ suma
+- resta
+* multi
+div division 
+% resto
+
+&& and
+|| or
+! not
+
+== igual
+< menor que
+> mayor que
+!= distinto
+
+SENTENCIAS DE CONTROL
+@if(condificon){
+
+}@else if(condificon){
+
+}@else{
+
+}
+
+@for $valor from @inicio through @fin{
+
+}
+
+@each $valor in $list{
+
+}
+
+@while(condicion){
+
+}
+
+MIXIN  Son bloques de codigo como una funcion que no retorna valores
+@mixin nombreDelMixin[(p1,p2,...pn)]{
+
+} 
+
+@include nombre;
+@include nombre(p1,p2...);
+
+FUNCIONES Son bloques de codigo que realizan calculos y retornan valores
+@function nombreFuncion([p1,p2,...pn]){
+    @return $valor;
+}
+
+nombreFuncion();
+nombreFuncion(p1,p2...);
+
+ANIDACIONES
+Si tenemos nav ul li{} es lo mismo que :
+nav{
+    ul{
+        li{
+            &:hover{ (Cuando se pasa por encima del li que este en nav ul)
+
+            }
+        }
+    }
+}
+
+PARTIALS (modulos de codigo, para estructurar el codigo)
+
+_NombreFichero.scss (sass ignorara este archivo por el _, pero lo importamos al scss principal)
+@import "NombreFichero";
+*//*# sourceMappingURL=style.css.map */
