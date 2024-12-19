@@ -1,9 +1,10 @@
+@use 'variables';
 
 @mixin card-shadow($activo) {
     @if $activo {
-        box-shadow: 1px 1px 1px $color-3;
+        box-shadow: 1px 1px 1px variables.$color-3;
     } @else {
-        box-shadow: 1px 1px 1px $color-2;
+        box-shadow: 1px 1px 1px variables.$color-2;
     }
 }
 
