@@ -1,0 +1,32 @@
+@color-activo: green;
+@color-inactivo: red;
+
+.estilo-boton(){
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+   
+    &:hover {
+        background-color: pink;
+    }
+}
+
+.color-boton(@activo) when (@activo = true) {
+    background-color: @color-activo;
+}
+.color-boton(@activo) when (@activo = false){
+    background-color: @color-inactivo;
+}
+
+.boton-activo{
+    .estilo-boton();
+    .color-boton(true);
+}
+
+.boton-inactivo{
+    .estilo-boton();
+    .color-boton(false);
+}

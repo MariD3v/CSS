@@ -1,0 +1,86 @@
+/*SINTAXIS
+
+Se compila con: lessc fichero.less>fichero.css
+
+Para que la compilacion se haga automaticamente con cada cambio podemos usar: less-watch-compiler carpetadearchivoless carpetadearchivocss
+
+VARIABLES
+
+@variable: mari;
+
+OPERADORES
++ suma
+- resta
+* multi
+div division 
+% resto
+
+== igual
+< menor que
+> mayor que
+not distinto
+
+MIXINS
+
+.nombreBloque{
+...
+}
+
+.nombreBloque();
+
+.nombreBloque(param1:valor; param2){
+...
+}
+
+.nombreBloque(param1;param2)
+
+FUNCIONES
+
+.nombreFuncion(){
+... //La ultima instruccion, aunque no lleve return devuelve su valor
+}
+
+.nombreFuncion() //Si no devuelve valores con .
+@variable = nombreFuncion() //Si devuelve valores sin .
+
+.nombreFuncion(@parametro){
+...
+}
+
+.nombreFuncion(param) //Si no devuelve valores con .
+@variable = nombreFuncion(param) //Si devuelve valores sin .
+
+CONDICIONALES
+
+.when (@condicion){
+...
+}
+
+ejemplo:
+
+.color(@condicion) when (@condicion = true){
+    color:@color;
+}
+.color(@condicion) when (@condicion = false){
+    color:black@color;
+}
+
+p{
+.color(true);
+}
+
+ANIDACIONES
+Si tenemos nav ul li{} es lo mismo que :
+nav{
+    ul{
+        li{
+            &:hover{ (Cuando se pasa por encima del li que este en nav ul)
+            
+            }
+        }
+    }
+}
+
+FICHEROS EXTERNOS
+@import fichero.less
+*/
