@@ -1,0 +1,22 @@
+@use 'sass:color';
+@use 'variables';
+
+@mixin rounded-corners($radio) {
+    border-radius: $radio;
+}
+
+@mixin background($palabra, $color) {
+    @if($palabra == "brillo") {
+        background-color: color.adjust($color,$lightness: 20%);
+    } @else if($palabra == "mezcla") {
+        background-color: color.mix(variables.$color-2, $color, 50%);
+    } @else if($palabra == "escala") {
+        background-color: color.grayscale($color);
+    }
+}
+
+@mixin size($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+

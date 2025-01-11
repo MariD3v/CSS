@@ -8,7 +8,7 @@
   background-color: green;
 }
 .boton-activo:hover {
-  background-color: pink;
+  background-color: #004d00;
 }
 .boton-inactivo {
   display: inline-block;
@@ -20,5 +20,5 @@
   background-color: red;
 }
 .boton-inactivo:hover {
-  background-color: pink;
+  background-color: #cc0000;
 }

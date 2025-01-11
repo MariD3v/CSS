@@ -1,0 +1,42 @@
+.contenedor {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.caja1 {
+    width: 30%;
+    height: 300px;
+    margin: 1%;
+    background-color: @color-1;
+    &:hover {
+        .rounded-corners('30px');
+        .background('brillo', @color-1);
+        .size('210px', '210px');
+    }
+}	
+
+.caja2 {
+    width: 30%;
+    height: 300px;
+    margin: 1%;
+    background-color: @color-2;
+    &:hover {
+        .rounded-corners('20px');
+        .background('mezcla', @color-3);
+        .size('100px', '100px');
+    }
+}
+
+.caja3 {
+    width: 30%;
+    height: 300px;
+    margin: 1%;
+    background-color: @color-3;
+    &:hover {
+        .rounded-corners('10px');
+        .background('escala', @color-3);
+        .size('250px', '250px');
+    }
+}

@@ -1,0 +1,13 @@
+@use 'variables';
+
+@mixin card-shadow($activo) {
+    @if $activo {
+        box-shadow: 1px 1px 1px variables.$color-3;
+    } @else {
+        box-shadow: 1px 1px 1px variables.$color-2;
+    }
+}
+
+@mixin rounded-corners() {
+    border-radius: 5px;
+}

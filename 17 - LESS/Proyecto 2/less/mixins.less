@@ -1,0 +1,23 @@
+.rounded-corners(@radio) {
+    border-radius: @radio;
+}
+
+
+.background(@palabra; @color){
+    & when (@palabra = "brillo"){
+        background-color: lighten(@color, 20%);
+    }
+
+    & when (@palabra = "mezcla"){
+        background-color: mix(@color-2, @color, 50%);
+    }
+
+    & when (@palabra = "escala"){
+        background-color: greyscale(@color);
+    }
+} 
+
+.size(@ancho; @alto) {
+    width: @ancho;
+    height: @alto;
+}

@@ -1,7 +1,7 @@
 @color-activo: green;
 @color-inactivo: red;
 
-.estilo-boton(){
+.estilo-boton(@activo){
     display: inline-block;
     padding: 10px 20px;
     color: white;
@@ -9,24 +9,22 @@
     border-radius: 5px;
     cursor: pointer;
    
+    & when(@activo=true){
+        background-color: @color-activo;
+    }
+    & when(@activo=false){
+        background-color: @color-inactivo;
+    }
+
     &:hover {
-        background-color: pink;
+        background-color: darken(if(@activo, @color-activo, @color-inactivo), 10%);
     }
 }
 
-.color-boton(@activo) when (@activo = true) {
-    background-color: @color-activo;
-}
-.color-boton(@activo) when (@activo = false){
-    background-color: @color-inactivo;
-}
-
 .boton-activo{
-    .estilo-boton();
-    .color-boton(true);
+    .estilo-boton(true);
 }
 
 .boton-inactivo{
-    .estilo-boton();
-    .color-boton(false);
+    .estilo-boton(false);
 }

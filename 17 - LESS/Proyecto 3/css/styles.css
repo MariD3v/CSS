@@ -1,0 +1,28 @@
+.card-shadow {
+  box-shadow: 0 4px 8px #a7a7a7;
+}
+body {
+  font-family: 16px;
+  background-color: white;
+  padding: 1rem;
+}
+.profile-card {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 4px 8px #a7a7a7;
+  border-radius: 10px;
+}
+.profile-card .profile-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.profile-card .profile-name {
+  color: pink;
+}
+.profile-card .profile-ocupacion {
+  color: red;
+}
+.profile-card .profile-bio {
+  margin-top: 1rem;
+}
