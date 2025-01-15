@@ -1,0 +1,86 @@
+@use 'mixins';
+@use 'variables';
+
+body{
+    background-color: #f2f2f2;
+    font-family: variables.$font-family;
+    text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+    color: variables.$primary-color;
+}
+
+p{
+    font-size: 1.2rem;
+    color: #555;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #8e97c2; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #8f84d1;
+  color: #fff;
+}
+
+.product{
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img{
+    width: auto;
+    height: 100%;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.important-text{
+    color: variables.$secondary-color;
+    font-weight: bold;
+}
+
+$button-styles: (
+    primary-button: (
+        background-color: variables.$primary-color,
+        color: white
+    ),
+    secondary-button: (
+        background-color: #2ecc71,
+        color: white
+    ),
+    buy-button: (
+        background-color: #f39c12,
+        color: white
+    )
+);
+
+@each $button, $styles in $button-styles{
+    .#{$button}{
+        background-color: map-get($styles, background-color);
+        color: map-get($styles, color);
+    }
+    .#{$button}:hover{
+        background-color: darken(map-get($styles, background-color), 10%);
+    }
+}
+
+.centered{
+    @include mixins.center-element;
+}

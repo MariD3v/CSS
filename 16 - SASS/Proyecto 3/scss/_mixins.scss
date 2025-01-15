@@ -1,0 +1,8 @@
+@use 'sass:color';
+@use 'variables';
+
+@mixin center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
